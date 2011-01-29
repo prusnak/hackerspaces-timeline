@@ -1,5 +1,5 @@
 CFLAGS=$(shell sdl-config --cflags) -Wall
-LDFLAGS=$(shell sdl-config --libs)
+LDFLAGS=$(shell sdl-config --libs) -lSDL_image -lSDL_mixer
 
 all: timeline
 
