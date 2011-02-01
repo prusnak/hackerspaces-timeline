@@ -2,6 +2,7 @@
 #include <SDL/SDL_image.h>
 #include <SDL/SDL_mixer.h>
 #include <stdio.h>
+#include <time.h>
 #include "timeline.h"
 
 #define RESX 720
@@ -10,23 +11,29 @@
 
 SDL_Surface *screen, *map;
 int frame = 0;
+int idx = -1;
 
 void drawScreen()
 {
     int x, y;
-    int idx = frame/100;
+    time_t date = frame*86400*2;
+    char datestr[32];
+    strftime(datestr, sizeof(datestr), "%d %b %Y", gmtime(&date));
 
-    SDL_BlitSurface(map,0,screen,0);
+    SDL_BlitSurface(map, 0, screen, 0);
 
-    struct hsdata hs = timeline[idx];
+    
 
-    x = 360 + hs.lon*2;
-    y = 180 - hs.lat*2;
-    SDL_Rect rect = {x,y,3,3};
-    SDL_FillRect(screen, &rect, 0xFF0000);
+//    struct hsdata hs = timeline[idx];
+
+//    x = 360 + hs.lon*2;
+//    y = 180 - hs.lat*2;
+//    SDL_Rect rect = {x, y, 3, 3};
+//    SDL_FillRect(screen, &rect, 0xFF0000);
 
 
-    printf("%d %s, %s, %s\n", idx, hs.name, hs.city, hs.country);
+    printf("%d %s \n", frame, datestr);
+//    printf("%d %s, %s, %s\n", idx, hs.name, hs.city, hs.country);
     SDL_Flip(screen);
     ++frame;
 }

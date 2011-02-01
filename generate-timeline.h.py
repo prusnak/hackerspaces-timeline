@@ -47,6 +47,8 @@ f.write("};\n\n")
 f.write("struct hsdata timeline[] = {\n")
 
 for row in data:
+    if row[4] < 0:
+        continue
     f.write('  { "%s", "%s", "%s", ' % (row[0], row[1], row[2]) )
     f.write('%f, %f, ' % row[3])
     f.write('%d, "%s" },\n' % (row[4], row[5]) )
