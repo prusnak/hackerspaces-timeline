@@ -9,6 +9,7 @@ struct hsdata {
 };
 
 struct hsdata timeline[] = {
+  { "(Baltimore) Harford Hackerspace", "United States of America", "Baltimore County", 39.346468, -76.535775, 1233442800, "http://www.harfordhackerspace.org" },
   { "Computer Club of Western Michigan University", "United States of America", "Kalamazoo", 42.281020, -85.617539, 212972400, "http://yakko.cs.wmich.edu" },
   { "Computer Club an der RWTH Aachen e.V.", "Germany", "Aachen", 50.777158, 6.080541, 378687600, "http://www.ccac.rwth-aachen.de/" },
   { "The Clay Store", "New Zealand", "North Shore", -36.821213, 174.796464, 410223600, "" },
@@ -172,7 +173,7 @@ struct hsdata timeline[] = {
   { "FUBAR Labs", "United States of America", "Highland Park (right across the river from New Brunswick)", 40.505483, -74.432455, 1247263200, "http://fubarlabs.com" },
   { "Baltimore Node", "United States of America", "Baltimore", 39.311275, -76.618791, 1247695200, "http://www.baltimorenode.org/" },
   { "Nooumenon", "Germany", "Osnabrück", 52.277900, 8.039300, 1248300000, "" },
-  { "Delaware Hackerspace", "United States of America,United States of America", "Wilmington,Wilmington", 39.743206, -75.550642, 1248904800, "http://www.vintagecomputer.net" },
+  { "Delaware Hackerspace", "United States of America", "Wilmington,Wilmington", 39.743206, -75.550642, 1248904800, "http://www.vintagecomputer.net" },
   { "Gumbo Labs", "United States of America", "New Orleans", 29.976834, -90.110385, 1249077600, "http://www.gumbolabs.org/" },
   { "Digital Non-Sense", "France", "Paris", 48.889432, 2.304875, 1249077600, "http://www.digitalnonsense.org/" },
   { "Alpha One Labs", "United States of America", "Brooklyn", 40.718008, -73.945579, 1249077600, "http://www.alphaonelabs.com" },
@@ -323,5 +324,6 @@ struct hsdata timeline[] = {
   { "Jakarta, Indonesia", "Indonesia", "Jakarta", -6.253471, 106.832792, 1294182000, "http://space.hackers.co.id" },
   { "Tinker Tank", "United States of America", "Miami", 25.725103, -80.316819, 1294614000, "http://tinkertankmiami.com" },
   { "HackerSpace@GZ", "China", "Guangzhou", 23.125909, 113.318662, 1295391600, "http://www.kevinsmake.com" },
+  { "Maker Bench", "United States of America", "Tempe", 0.000000, 0.000000, 1295564400, "http://www.makerbench.com" },
   { NULL, NULL, NULL, 0.0, 0.0, 0, NULL }
 };
