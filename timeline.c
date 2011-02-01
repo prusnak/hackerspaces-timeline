@@ -48,7 +48,7 @@ int main(int argc, char* argv[])
         SDL_Quit();
         return 1;
     }
-    map = IMG_Load("map.jpg");
+    map = IMG_Load("map.png");
     if (!map) {
         SDL_Quit();
         return 2;
