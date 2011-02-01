@@ -106,9 +106,11 @@ void drawIntro()
 
 void drawOutro()
 {
-    SDL_BlitSurface(ending, 0, screen, 0);
-    SDL_Flip(screen);
-    if (++frame > 1001000) {
+    if (frame > 1002000) {
+        SDL_BlitSurface(ending, 0, screen, 0);
+        SDL_Flip(screen);
+    }
+    if (++frame > 1003000) {
         quit = 1;
     }
 }
