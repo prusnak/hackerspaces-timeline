@@ -40,7 +40,7 @@ f.write("    char *country;\n")
 f.write("    char *city;\n")
 f.write("    double lat;\n")
 f.write("    double lon;\n")
-f.write("    int date;\n")
+f.write("    time_t date;\n")
 f.write("    char *url;\n")
 f.write("};\n\n")
 

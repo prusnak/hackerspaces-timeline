@@ -40,14 +40,14 @@ void drawScreen()
     SDL_Rect rect = {300, 368, 420, 120};
     SDL_FillRect(screen, &rect, 0);
 
-    TTF_SizeText(font, datestr, &x, NULL);
+    TTF_SizeUTF8(font, datestr, &x, NULL);
     rDate.x = 160 - x;
-    text = TTF_RenderText_Shaded(font, datestr, cWhite, cBlack);
+    text = TTF_RenderUTF8_Shaded(font, datestr, cWhite, cBlack);
     SDL_BlitSurface(text, NULL, screen, &rDate);
     SDL_FreeSurface(text);
 
     snprintf(totalstr, sizeof(totalstr), "Total hackerspaces: %d", cnt);
-    text = TTF_RenderText_Shaded(font, totalstr, cWhite, cBlack);
+    text = TTF_RenderUTF8_Shaded(font, totalstr, cWhite, cBlack);
     SDL_BlitSurface(text, NULL, screen, &rTotal);
     SDL_FreeSurface(text);
 
@@ -80,15 +80,15 @@ void drawScreen()
             SDL_BlitSurface(point3, NULL, screen, &rect);
         }
 
-        text = TTF_RenderText_Shaded(font, hs->name, cWhite, cBlack);
+        text = TTF_RenderUTF8_Shaded(font, hs->name, cWhite, cBlack);
         SDL_BlitSurface(text, NULL, screen, &rName);
         SDL_FreeSurface(text);
 
-        text = TTF_RenderText_Shaded(font, hs->city, cWhite, cBlack);
+        text = TTF_RenderUTF8_Shaded(font, hs->city, cWhite, cBlack);
         SDL_BlitSurface(text, NULL, screen, &rCity);
         SDL_FreeSurface(text);
 
-        text = TTF_RenderText_Shaded(font, hs->country, cWhite, cBlack);
+        text = TTF_RenderUTF8_Shaded(font, hs->country, cWhite, cBlack);
         SDL_BlitSurface(text, NULL, screen, &rCountry);
         SDL_FreeSurface(text);
     }
