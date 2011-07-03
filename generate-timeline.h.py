@@ -28,7 +28,10 @@ for row in f:
     try:
         row[4] = int(time.mktime(time.strptime(row[4], "%d %B %Y")))
     except:
-        row[4] = int(time.mktime(time.strptime(row[4], "%Y")))
+        try:
+            row[4] = int(time.mktime(time.strptime(row[4], "%B %Y")))
+        except:
+            row[4] = int(time.mktime(time.strptime(row[4], "%Y")))
     # append processed data
     data.append(row)
 
