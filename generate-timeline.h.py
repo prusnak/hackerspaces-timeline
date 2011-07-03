@@ -15,7 +15,7 @@ for row in f:
         first = False
         continue
     # process location field
-    loc = row[3].replace("\xc2\xb0",",").replace("'",",").replace('"',",").split(",")
+    loc = row[3].replace("\xc2\xb0 ",",").replace("' ",",").replace('" ',",").split(",")
     if len(loc) == 8:
         lat = float(loc[0]) + float(loc[1])/60 + float(loc[2])/3600
         if loc[3] == "S": lat = -lat
