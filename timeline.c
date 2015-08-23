@@ -55,7 +55,7 @@ void drawScreen()
         SDL_BlitSurface(grid, NULL, screen, &rChart);
     } else
     if (frame % 25 == 1) {
-        SDL_Rect rect = {8+frame/50-1, 392+80-1-cnt/5, 3, 3};
+        SDL_Rect rect = {8+frame/70-1, 392+80-1-cnt/15, 3, 3};
         SDL_BlitSurface(point3, NULL, screen, &rect);
     }
 
