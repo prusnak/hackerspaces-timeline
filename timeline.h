@@ -141,7 +141,7 @@ struct hsdata timeline[] = {
   { "Digitales Aachen e.V. (digitac)", "Germany", "Aachen", 50.779167, 6.086944, 1217196000, "http://digitac.cc" },
   { "HACKMIAMI", "United States of America", "Miami", 25.761944, -79.820556, 1217541600, "http://www.hackmiami.org/" },
   { "IChengdu", "China", "Chengdu", 30.670000, 104.060000, 1218146400, "http://www.ichengdu.org" },
-  { "VHS", "Canada", "Vancouver", 49.268889, -122.901667, 1219096800, "http://vancouver.hackspace.ca" },
+  { "VHS", "Canada", "Vancouver", 49.268889, -122.901667, 1219096800, "http://vanhack.ca" },
   { "Forskningsavdelningen", "Sweden", "Malmö", 55.583611, 13.026667, 1219615200, "http://forskningsavd.se" },
   { "Syn2cat", "Luxembourg", "Luxembourg", 49.591389, 6.140278, 1219701600, "http://www.hackerspace.lu" },
   { "Hackburg", "Switzerland", "Freiburg", 46.801389, 7.152222, 1219874400, "http://hackburg.ch" },
