@@ -613,7 +613,7 @@ struct hsdata timeline[] = {
   { "Hacklab Belgrade", "Serbia", "Belgrade", 44.797222, 20.480000, 1328914800, "http://oosm.org" },
   { "Chelmsford Makerspace", "United Kingdom", "Chelmsford", 51.702778, 0.476944, 1329260400, "http://www.chelmsfordmakerspace.co.uk" },
   { "IstanbulHS", "Turkey", "Istanbul", 40.990278, 29.042778, 1329346800, "https://istanbulhs.org/" },
-  { "Emerald Coast Community of Makers", "United States of America", "Pensacola", 30.423333, -86.784722, 1329519600, "http://www.eccmakers.com" },
+  { "Emerald Coast Community of Makers", "United States of America", "Pensacola", 30.423789, -87.215731, 1329519600, "http://www.eccmakers.com" },
   { "Hackerspace.tn", "Tunisia", "", 36.841389, 10.157500, 1330556400, "http://hackerspaces.tn" },
   { "Wellington Makerspace", "New Zealand", "Wellington", -40.703333, 174.781389, 1330556400, "http://www.wellingtonmakerspace.com" },
   { "ChattLab", "United States of America", "Chattanooga", 35.017222, -84.674167, 1330556400, "http://www.chattlab.org/" },
